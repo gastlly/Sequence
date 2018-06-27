@@ -2,7 +2,10 @@
 #define SEQUENCE_H
 
 #include <iostream>
+#include <string>
 #include <fstream>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 
 class Sequence
@@ -16,6 +19,7 @@ public:
     string longestConsecutive();
     string longestRepeated();
 private:
+    string sequence;
     string file;
     ifstream f;
 };
